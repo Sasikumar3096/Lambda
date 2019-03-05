@@ -1,0 +1,72 @@
+<html>
+<head>
+<title id="title"></title>
+
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+   	   <script src="scripts/jquerysession.js"></script>
+	<script src="scripts/profile.js"></script>
+
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<link rel="stylesheet" href="profileStyle.css">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+
+    
+</head>
+
+<body id="body" style="display: none;">
+
+
+
+<div class="container">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid navbar-border">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-home"></i> Brand</a>
+    </div>
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="fa fa-building" id ="username" ></i> </a></li>
+         
+        <li>
+            <div class="navbar-form" role="search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Usernames" id="search" name="q">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit" onclick="search()"><i class="fa fa-search" ></i></button>
+                </div>
+            </div>
+            </div>    
+        </li>
+ 
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="logout()"><i class="fa fa-cogs"></i> 
+						<b class="color-blue">Logout</b> 
+		<span class="caret"></span></a>
+        
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+	<div id="result"></div>
+
+
+</body>
+
+</html>
+
